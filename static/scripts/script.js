@@ -19,3 +19,9 @@ async function submitForm() {
    
 }
 
+const form = document.querySelector('#contact-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  submitForm();
+})
